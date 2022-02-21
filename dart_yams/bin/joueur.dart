@@ -34,12 +34,13 @@ class Joueur {
 
 // autres méthodes
 // incrémente le nombre de manche gagnée de +1
-  void setMancheGagnee() {}
+  void setMancheGagnee() {
+    _mancheGagnee++;
+  }
 
   // lance tout les dés
   void lancerDes() {
-    //for{Des unDes in this._sesDes
-    //}
+    for (Des unDes in this._sesDes) {}
   }
 
   // permet de lancer une liste de dés précis parmis les dés du joueurs

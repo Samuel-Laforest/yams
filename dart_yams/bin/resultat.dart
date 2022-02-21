@@ -22,13 +22,17 @@ class Resultat {
 
   // autres méthodes
   // vide la liste des combinaisons
-  void clear() {}
+  void clear() {
+    _lesCombinaisons = List.empty(growable: true);
+  }
 
   // ajoute une combinaison à la liste de combinaison
   void ajouterCombinaison(Combinaison c) {}
 
   // vide le tableau de recap
-  void cleartab() {}
+  void cleartab() {
+    _tabRecap = List.generate(6, (index) => 0);
+  }
 
   // calcul et remplit le récap des dés a partir d'une liste de dé
   void calculRecap(List<Des> desACalculer) {
