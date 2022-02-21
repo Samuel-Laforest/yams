@@ -23,7 +23,7 @@ class Resultat {
   // autres méthodes
   // vide la liste des combinaisons
   void clear() {
-    _lesCombinaisons = List.empty(growable: true);
+    _lesCombinaisons.clear();
   }
 
   // ajoute une combinaison à la liste de combinaison
@@ -31,7 +31,7 @@ class Resultat {
 
   // vide le tableau de recap
   void cleartab() {
-    _tabRecap = List.generate(6, (index) => 0);
+    _tabRecap.clear();
   }
 
   // calcul et remplit le récap des dés a partir d'une liste de dé
